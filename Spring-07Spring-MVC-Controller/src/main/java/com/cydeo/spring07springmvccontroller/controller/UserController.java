@@ -9,7 +9,7 @@ public class UserController {
     @RequestMapping("/user")
     public String user(){
 
-        return "/user/userinfo.html";  //go to folder static and look overthere
+        return "/user/userinfo.html";  //go to folder static and look overthere -static folder is a default starter folder
     }
 
 }
