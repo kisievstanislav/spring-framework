@@ -1,13 +1,13 @@
-package com.cydeo.spring09springthymeleaf;
+package com.cydeo.employeeregistrationproject;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Spring09SpringThymeleafApplication {
+public class EmployeeRegistrationProjectApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Spring09SpringThymeleafApplication.class, args);
+        SpringApplication.run(EmployeeRegistrationProjectApplication.class, args);
     }
 
 }
