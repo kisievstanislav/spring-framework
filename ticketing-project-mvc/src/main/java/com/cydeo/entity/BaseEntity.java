@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -12,9 +12,9 @@ import java.time.LocalDate;
 public class BaseEntity {
 
     private Long id;
-    private LocalDate insertDateTime;
-    private Long insertUSerId;
-    private LocalDate lastUpdateDateTime;
+    private LocalDateTime insertDateTime;
+    private Long insertUserId;
+    private LocalDateTime lastUpdateDateTime;
     private Long lastUpdateUserId;
 
 }

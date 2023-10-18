@@ -1,6 +1,5 @@
 package com.cydeo.dto;
 
-import com.cydeo.entity.Role;
 import com.cydeo.enums.Gender;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -19,5 +18,6 @@ public class UserDTO {
     private String phone;
     private RoleDTO role;
     private Gender gender;
+
 
 }

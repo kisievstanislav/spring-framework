@@ -2,15 +2,15 @@ package com.cydeo.enums;
 
 public enum Gender {
 
-    Male("Male"),FEMALE("Female");
+    MALE("Male"),FEMALE("Female");
 
-    private  final  String value;
+    private final String value;
 
     Gender(String value) {
         this.value = value;
     }
 
-    public String getValue() {
+    public String getValue(){
         return value;
     }
 }
