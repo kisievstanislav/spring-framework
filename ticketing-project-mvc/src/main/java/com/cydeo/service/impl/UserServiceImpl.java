@@ -8,11 +8,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class UserServiceImpl extends AbstractMapService<UserDTO,String> implements UserService {
+public class UserServiceImpl extends AbstractMapService<UserDTO, String> implements UserService {
 
     @Override
     public UserDTO save(UserDTO object) {
-        return super.save(object.getUserName(),object);
+        return super.save(object.getUserName(), object);
     }
 
     @Override
@@ -27,7 +27,7 @@ public class UserServiceImpl extends AbstractMapService<UserDTO,String> implemen
 
     @Override
     public void update(UserDTO object) {
-        super.update(object.getUserName(),object);
+        super.update(object.getUserName(), object);
     }
 
     @Override
@@ -39,4 +39,10 @@ public class UserServiceImpl extends AbstractMapService<UserDTO,String> implemen
     public List<UserDTO> findManagers() {
         return super.findAll().stream().filter(user -> user.getRole().getId() == 2).collect(Collectors.toList());
     }
+
+    @Override
+    public List<UserDTO> findEmployees() {
+        return super.findAll().stream().filter(user -> user.getRole().getId() == 3).collect(Collectors.toList());
+    }
+
 }
