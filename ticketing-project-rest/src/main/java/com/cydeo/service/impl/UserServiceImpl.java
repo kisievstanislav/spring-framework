@@ -129,5 +129,4 @@ public class UserServiceImpl implements UserService {
 
         return users.stream().map(userMapper::convertToDTO).collect(Collectors.toList());
     }
-
 }
