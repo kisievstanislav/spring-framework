@@ -46,7 +46,7 @@ public class TaskController {
             model.addAttribute("employees", userService.listAllByRole("employee"));
             model.addAttribute("tasks", taskService.listAllTasks());
 
-            return "/task/create";
+            return "task/create";
 
         }
 
@@ -89,7 +89,7 @@ public class TaskController {
             model.addAttribute("employees", userService.listAllByRole("employee"));
             model.addAttribute("tasks", taskService.listAllTasks());
 
-            return "/task/update";
+            return "task/update";
 
         }
 
@@ -122,7 +122,7 @@ public class TaskController {
             model.addAttribute("tasks", taskService.listAllTasksByStatusIsNot(Status.COMPLETE));
             model.addAttribute("statuses", Status.values());
 
-            return "/task/status-update";
+            return "task/status-update";
 
         }
 

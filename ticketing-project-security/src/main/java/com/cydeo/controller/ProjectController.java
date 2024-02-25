@@ -31,7 +31,7 @@ public class ProjectController {
         model.addAttribute("projects", projectService.listAllProjectDetails());
         model.addAttribute("managers", userService.listAllByRole("manager"));
 
-        return "/project/create";
+        return "project/create";
 
     }
 
@@ -43,7 +43,7 @@ public class ProjectController {
             model.addAttribute("projects", projectService.listAllProjectDetails());
             model.addAttribute("managers", userService.listAllByRole("manager"));
 
-            return "/project/create";
+            return "project/create";
 
         }
 
@@ -74,7 +74,7 @@ public class ProjectController {
         model.addAttribute("projects", projectService.listAllProjectDetails());
         model.addAttribute("managers", userService.listAllByRole("manager"));
 
-        return "/project/update";
+        return "project/update";
 
     }
 
@@ -86,7 +86,7 @@ public class ProjectController {
             model.addAttribute("projects", projectService.listAllProjectDetails());
             model.addAttribute("managers", userService.listAllByRole("manager"));
 
-            return "/project/update";
+            return "project/update";
 
         }
 
@@ -103,7 +103,7 @@ public class ProjectController {
 
         model.addAttribute("projects", projects);
 
-        return "/manager/project-status";
+        return "manager/project-status";
     }
 
     @GetMapping("/manager/complete/{projectCode}")

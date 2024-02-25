@@ -60,7 +60,7 @@ public class SecurityConfig {
                 .antMatchers(
                        "/",
                        "/login",
-                       "/fragments/**",
+                       "fragments/**",
                        "/assets/**",
                        "/images/**"
                 ).permitAll()

@@ -29,7 +29,7 @@ public class UserController {
         model.addAttribute("roles", roleService.listAllRoles());
         model.addAttribute("users", userService.listAllUsers());
 
-        return "/user/create";
+        return "user/create";
     }
 
 
@@ -41,7 +41,7 @@ public class UserController {
             model.addAttribute("roles", roleService.listAllRoles());
             model.addAttribute("users", userService.listAllUsers());
 
-            return "/user/create";
+            return "user/create";
 
         }
 
@@ -57,7 +57,7 @@ public class UserController {
         model.addAttribute("roles", roleService.listAllRoles());
         model.addAttribute("users", userService.listAllUsers());
 
-        return "/user/update";
+        return "user/update";
 
     }
 
@@ -69,7 +69,7 @@ public class UserController {
             model.addAttribute("roles", roleService.listAllRoles());
             model.addAttribute("users", userService.listAllUsers());
 
-            return "/user/update";
+            return "user/update";
 
         }
 
